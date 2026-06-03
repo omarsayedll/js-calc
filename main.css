@@ -1,0 +1,68 @@
+body {
+    font-family: "Rethink Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#calc {
+    background-color: black;
+    border-radius: 20px;
+    padding: 30px 20px 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    width: 310px;
+}
+
+div#display {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 50px;
+    word-break: break-all;
+}
+
+div.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+
+button {
+    border-radius: 47%;
+    background-color: #ffa500;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: larger;
+    outline: none;
+    border: none;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+button#equal {
+    width: initial;
+    height: 60px;
+    border-radius: 999px;
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #edc57b;
+}
+
+.num-btn {
+    background-color: #7c7a75;
+}
+
+.num-btn:hover {
+    background-color: #575654;
+}
+
+#modulus {
+    background-color: #7c7a75;
+}
+
+#btndot {
+    background-color: #7c7a75;
+}
