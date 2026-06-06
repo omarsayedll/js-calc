@@ -49,7 +49,11 @@ document.getElementById("clear").onclick = function () {
 };
 
 document.getElementById("equal").onclick = function () {
-  display.textContent = "TETE";
+  try {
+    display.textContent = +eval(display.textContent).toFixed(3);
+  } catch {
+    display.textContent = "Error";
+  }
 };
 
 document.getElementById("del").onclick = function () {
