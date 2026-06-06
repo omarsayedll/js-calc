@@ -48,6 +48,8 @@ document.getElementById("clear").onclick = function () {
   display.textContent = 0;
 };
 
+// calculate
+
 document.getElementById("equal").onclick = function () {
   try {
     display.textContent = +eval(display.textContent).toFixed(3);
